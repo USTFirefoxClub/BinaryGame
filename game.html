@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<!-- 
+			width = device-width
+			initial-scale = 1.0
+			user-scalable = no
+		-->
+		<title> Binary Game </title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<audio>
+			<source src="sounds/Click1.wav"></source>
+			
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		
+		<audio id="audio1">
+		
+			<source id="audio1" src="sounds/CorrectAnswer.wav"></source>
+		
+			Your browser isn't invited for super fun audio time.
+		</audio>
+	</head>
+	
+	<body>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/game.js"></script>
+		
+		
+		
+		<!-- initialization -->
+		
+		
+		<script type="text/javascript">					
+		</script>
+		
+		
+		<!-- return to main menu -->
+		<div style="float:left;">	
+			<a class="btn btn-primary btn-default" href="index.html"> Back </a>
+		</div>
+		<!-- Mute/Unmute -->
+		<div  style="text-align:right;">
+			<a><button id="mute" type="button" class="btn btn-info">
+								<span id="muteText" style="font-size:10pt; color:#FFF; font-weight:bold;">Mute</span>
+								</button>
+			</a>
+		</div>	
+		<br />
+		<!-- game info -->
+		<div class="highscore">
+			<span id="level">SCORE:<span id="currentScore"> 0 </span></span>
+		</div>		
+		<br>
+		<div class="level" style="float:left;">	
+			<span id="level" style="text-align:left;">LEVEL: <span id="currentLevel">00</span></span>
+		</div>
+		
+		<div id="progress">
+			<span id="currentProgress"> 0 </span><span id="totalProgress">/5</span>
+		</div>
+		<!-- progress bar -->
+		<div class="progress progress-striped active">
+			<div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="60" style="width: 100%">
+				<span class="sr-only" id="time-text">100 seconds</span>
+			</div>
+		</div>
+		
+		<!-- question -->
+		<div class="well well-lg container" id="questionBar">
+			<span id="question">202</span>
+		</div>
+		
+		<!-- toggle button group -->
+		<div class="container">
+			<!-- button group (128 64 32 16) -->
+			<div class="btn-group btn-group-justified" id="toggle-top-row" style="max-width: 100%">
+					<a class="btn btn-lg" id="toggle-128">0</a>
+					<a class="btn btn-lg" id="toggle-64">0</a>
+					<a class="btn btn-lg" id="toggle-32">0</a>
+					<a class="btn btn-lg" id="toggle-16">0</a>
+			</div> <!-- btn-group -->
+				
+			<br />
+			
+			<!-- labels (128 64 32 16) -->
+			<table class="table">
+				<tr>
+					<td width="25%">128</td>
+					<td>64</td>
+					<td>32</td>
+					<td>16</td>
+				</tr>
+			</table>
+			
+			<!-- button group (8 4 2 1) -->
+			<div class="btn-group btn-group-justified" id="toggle-bottom-row" style="max-width: 100%; ">
+						<a class="btn btn-lg" id="toggle-8">0</a>
+						<a class="btn btn-lg" id="toggle-4">0</a>
+						<a class="btn btn-lg" id="toggle-2">0</a>
+						<a class="btn btn-lg" id="toggle-1">0</a>
+			</div> <!-- btn-group -->
+			
+			<br />
+			
+			<!-- labels (128 64 32 16) -->
+			<table class="table">
+				<tr>
+					<td>8</td>
+					<td>4</td>
+					<td>2</td>
+					<td>1</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<!-- game over popup -->
+		<div id="gameOverPopup" style="width: 100%; height: 100%; background-color: #2a2a2a; position: absolute; top: -100%; font-color: white; z-index: 100;">
+			<h1 class="page-header"> TIME'S UP! </h1>
+			<span id="level">Your Score: <span id="finalScore">00</span></span>
+			<div style="text-align:right; margin-right:20px;">
+				<a class="btn btn-primary btn-default" href="index.html"> Back </a>
+			</div>
+		</div>
+		
+	</body>
+</html>
+

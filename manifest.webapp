@@ -1,0 +1,15 @@
+{
+  "name": "Binary Game",
+  "description": "The Binary Game is a simple game wherein a player must convert a given decimal number to binary as fast as he/she can",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon/icon.png",
+    "60": "/icon/icon-60.png"
+  },
+  "developer": {
+    "name": "Team Bangan",
+     "url": "http://twitter.com/janmarasigan"
+  },
+  "orientation": ["portrait"],
+  "default_locale": "en"
+}

@@ -1,0 +1,116 @@
+@font-face {
+			font-family: 'File';
+			 src: url('../fonts/File.otf');
+			font-family: 'Myriad Pro Bold';
+			 src: url('../fonts/MyriadPro-BoldCond.otf');
+		    }
+		  h1{
+			font-family: 'Myriad Pro Bold';
+			 color: #ffbd4d;
+			}
+		body{
+			 font-family: 'Myriad Pro Bold';
+			 background-color:#2a2a2a;
+			 margin-left:10px;
+			 margin-right:10px;
+			 margin-top:10px;
+			 overflow-y:hidden;
+			 overflow-x:hidden;
+			}
+		  ul{
+			 margin-left:-65px;
+			}
+		   li{
+			 margin-left:20px;
+			 display:inline-block;
+			 list-style-type:none;
+			}		
+		table{
+				margin-top:-10px;			 	
+			}
+		td{
+			border:2px #fff solid;
+			color:#fff;
+			font-size:12pt;
+			text-align:center;
+		   }
+		/*circle buttons*/
+		.cir{
+				position:absolute;
+				z-index:2;
+				background-color:#ffbd4d;
+				width:50px;
+				height:50px;
+				border-radius:75px;
+				}
+		.cir-back{
+				position:relative;
+				z-index:1;
+				background-color:#ed8f09;
+				width:51px;
+				height:51px;
+				margin-left:5px;
+				border-radius:75px;
+				}
+		.cir:active{
+				background-color:#9fc351;
+				}	
+		/*game.html*/
+		.highscore{
+				text-align:right;
+				margin-right:10px;
+				margin-top:-20px;
+				color:#fff;
+				}
+		#highScore{
+				color:#ffbd4d;
+				}
+		#currentScore{
+				color:#ffd535;
+				}
+		#finalScore{
+				color:#ffd535;
+				}
+		#level{
+				color:#fff;
+				font-size:15pt;
+				}
+		.level{
+				margin-top:-20px;
+				}
+		#currentLevel{
+				color:#d6732b;
+				font-size:15pt;
+				}
+		#currentProgress{
+
+				}
+		#totalProgress{
+
+				}
+		#progress{
+				margin-top:-20px;
+				text-align:right;
+				color:#e8f054;
+				font-size:15pt;
+				}
+		/*games toggle*/
+		#questionBar{
+				background-color:#2a2a2a;
+				height:50px;
+				text-align:center;
+				border:2px #fff solid;
+				padding:0;
+				}
+		#question{
+				font-size:28pt;
+				color:#fff;
+				}
+		#toggle-128, #toggle-64, #toggle-32, #toggle-16, #toggle-8, #toggle-4, #toggle-2, #toggle-1{	
+				border:2px #fff solid;
+				border-radius:10px;
+				background-color:#ffbd4d;
+				font-size:16pt;
+				color:white;
+				}
+		
